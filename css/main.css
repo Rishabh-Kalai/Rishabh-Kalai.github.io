@@ -62,14 +62,12 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 a {
-	color: #e84545;
+	color: blue;
 }
-a:hover, a:focus {
-	text-decoration: none;
-	-moz-transition: background-color, color, 0.3s;
-	-o-transition: background-color, color, 0.3s;
-	-webkit-transition: background-color, color, 0.3s;
-	transition: background-color, color, 0.3s;
+p{
+	font-size: 1.75rem;
+	font-family: "Cutive Mono";
+	color: black;
 }
 body {
 	font-family: "Cutive Mono";
@@ -140,9 +138,10 @@ ul li {
 .navigation li {
 	display: inline-block;
 }
+
 .navigation, .navigation a {
-	color: rgba(0, 0, 0, 1);
-	font-size: 16px;
+	color: black;
+	font-size: 26px;
 	margin-left: 40px;
 	letter-spacing: -1px;
 }
@@ -391,7 +390,18 @@ ul li {
 	background-color: #333;
 	padding: 7%;
 }
+.footer h3 {
+	color: #fff;
+	margin: 0 0 15px 0;
+	padding: 0px;
+}
+
 .footer h4 {
+	color: #fff;
+	margin: 0 0 15px 0;
+	padding: 0px;
+}
+.footer h5{
 	color: #fff;
 	margin: 0 0 15px 0;
 	padding: 0px;
@@ -410,6 +420,21 @@ ul li {
 	font-size: 11px;
 	margin: 0 2px;
 }
+
+.footer #linkedin_link{
+	color: lightblue;
+	font-size: 2rem;
+}
+
+.footer #email_link{
+	color: lightgreen;
+	font-size: 2rem;
+}
+
+.footer #github_link{
+	color: orange;
+	font-size: 2rem;
+}
 /* ------------------------------------------------------------------------------
 	 Work Details
 -------------------------------------------------------------------------------*/
@@ -422,4 +447,22 @@ ul li {
 .work-detail a
 {
 	color:#000;
+}
+
+iframe{
+		display: block;
+		height: 100vh;
+		width: 100vw;
+		border: none;
+		background: lightyellow;
+}
+
+/* ------------------------------------------------------------------------------
+	 About Me
+-------------------------------------------------------------------------------*/
+embed{
+	height: 100vh;
+	width: 100%;
+	border: none;
+	background: lightyellow;
 }
