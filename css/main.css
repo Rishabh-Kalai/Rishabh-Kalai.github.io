@@ -106,18 +106,22 @@ ul li {
 	-webkit-transition: padding 0.3s;
 	transition: padding 0.3s;
 }
-#header .logo {
+#header .logo img {
 	float: left;
+	width: 6rem;
+	height: auto;
+	margin:0.25rem;
 }
 #header.fixed {
 	background-color: rgba(255, 255, 255, 1);
 }
 #header.fixed .header-content {
 	border-bottom: 0;
-	padding: 25px 10%;
+	padding: 0.25rem 10%;
+	align-items: center;
 }
 #header.fixed .nav-toggle {
-	top: 18px;
+	top: 0.25rem;
 }
 .navigation.open {
 	opacity: 0.9;
@@ -136,9 +140,9 @@ ul li {
 
 .navigation, .navigation a {
 	color: black;
-	font-size: 26px;
-	margin-left: 40px;
-	letter-spacing: -1px;
+	font-size: 2.5rem;
+	margin:0.25rem;
+	margin-left: 3rem;
 }
 .navigation a:hover, .navigation a.active {
 	color: #000;
@@ -454,17 +458,6 @@ ul li {
 iframe {
 	height: 100vh;
 	width: 100%;
-	border: none;
-	background: lightyellow;
-}
-
-/* ------------------------------------------------------------------------------
-	 About Me
--------------------------------------------------------------------------------*/
-embed{
-	height: 100vh;
-	width: 100%;
-	zoom: 0.5;
 	border: none;
 	background: lightyellow;
 }
