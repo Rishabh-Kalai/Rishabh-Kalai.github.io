@@ -1,8 +1,8 @@
 /* ------------------------------------------------------------------------------
 	Typography
 -------------------------------------------------------------------------------*/
-
-@import url(https://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
 p {
 	font-size: 14px;
 	line-height: 22.4px;
@@ -53,18 +53,17 @@ h5 {
 /* ------------------------------------------------------------------------------
 	Global Styles
 -------------------------------------------------------------------------------*/
-a {
-	color: blue;
-}
 p{
 	font-size: 1.75rem;
-	font-family: "Cutive Mono";
+	font-family: "Montserrat", sans-serif;
 	color: black;
 }
 body {
-	font-family: "Cutive Mono";
+	font-family: "Reem Kufi", sans-serif;
+	font-optical-sizing: auto;
 	font-weight: 400;
-	color: #fff;
+	font-style: normal;
+	background-color: white;
 }
 ul, ol {
 	margin: 0;
@@ -99,7 +98,7 @@ ul li {
 }
 #header .header-content {
 	margin: 0 auto;
-	padding: 60px 10%;
+	padding: 2rem;
 	width: 100%;
 	-moz-transition: padding 0.3s;
 	-o-transition: padding 0.3s;
@@ -108,12 +107,11 @@ ul li {
 }
 #header .logo img {
 	float: left;
-	width: 6rem;
-	height: auto;
+	width: 7rem;
 	margin:0.25rem;
 }
 #header.fixed {
-	background-color: rgba(255, 255, 255, 1);
+	background-color: white;
 }
 #header.fixed .header-content {
 	border-bottom: 0;
@@ -123,21 +121,19 @@ ul li {
 #header.fixed .nav-toggle {
 	top: 0.25rem;
 }
-.navigation.open {
-	opacity: 0.9;
-	visibility: visible;
-	-moz-transition: opacity 0.5s;
-	-o-transition: opacity 0.5s;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
-}
 .navigation {
 	float: right;
+}
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	padding: 10px;
 }
 .navigation li {
 	display: inline-block;
 }
-
 .navigation, .navigation a {
 	color: black;
 	font-size: 2.5rem;
@@ -145,158 +141,13 @@ ul li {
 	margin-left: 3rem;
 }
 .navigation a:hover, .navigation a.active {
-	color: #000;
-}
- nav ul {
-	 display: flex;
-	 justify-content: space-between;
-	 align-items: center;
-	 list-style: none;
-	 padding: 10px;
- }
-.nav-toggle {
-	display: none;
-	height: 44px;
-	overflow: hidden;
-	position: fixed;
-	right: 5%;
-	text-indent: 100%;
-	top: 32px;
-	white-space: nowrap;
-	width: 44px;
-	z-index: 99999;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-.nav-toggle:before, .nav-toggle:after {
-	border-radius: 50%;
-	content: "";
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	-moz-backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-transition-property: -moz-transform;
-	-o-transition-property: -o-transform;
-	-webkit-transition-property: -webkit-transform;
-	transition-property: transform;
-}
-.nav-toggle:before {
-	background-color: #333;
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-}
-.nav-toggle:after {
-	background-color: #000;
-	-moz-transform: scale(0);
-	-ms-transform: scale(0);
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	-moz-transition-duration: 0s;
-	-o-transition-duration: 0s;
-	-webkit-transition-duration: 0s;
-	transition-duration: 0s;
-}
-.nav-toggle span {
-	background-color: #fff;
-	bottom: auto;
-	display: inline-block;
-	height: 3px;
-	left: 50%;
-	position: absolute;
-	right: auto;
-	top: 50%;
-	width: 18px;
-	z-index: 10;
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
-.nav-toggle span:before, .nav-toggle span:after {
-	background-color: #fff;
-	content: "";
-	height: 100%;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 100%;
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	-moz-backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-transition: -moz-transform 0.3s;
-	-o-transition: -o-transform 0.3s;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-}
-.nav-toggle span:before {
-	-moz-transform: translateY(-6px) rotate(0deg);
-	-ms-transform: translateY(-6px) rotate(0deg);
-	-webkit-transform: translateY(-6px) rotate(0deg);
-	transform: translateY(-6px) rotate(0deg);
-}
-.nav-toggle span:after {
-	-moz-transform: translateY(6px) rotate(0deg);
-	-ms-transform: translateY(6px) rotate(0deg);
-	-webkit-transform: translateY(6px) rotate(0deg);
-	transform: translateY(6px) rotate(0deg);
-}
-.nav-toggle.close-nav:before {
-	-moz-transform: scale(0);
-	-ms-transform: scale(0);
-	-webkit-transform: scale(0);
-	transform: scale(0);
-}
-.nav-toggle.close-nav:after {
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-.nav-toggle.close-nav span {
-	background-color: rgba(255, 255, 255, 0);
-}
-.nav-toggle.close-nav span:before, .nav-toggle.close-nav span:after {
-	background-color: #fff;
-}
-.nav-toggle.close-nav span:before {
-	-moz-transform: translateY(0) rotate(45deg);
-	-ms-transform: translateY(0) rotate(45deg);
-	-webkit-transform: translateY(0) rotate(45deg);
-	transform: translateY(0) rotate(45deg);
-}
-.nav-toggle.close-nav span:after {
-	-moz-transform: translateY(0) rotate(-45deg);
-	-ms-transform: translateY(0) rotate(-45deg);
-	-webkit-transform: translateY(0) rotate(-45deg);
-	transform: translateY(0) rotate(-45deg);
+	color: darkred;
 }
 /* ------------------------------------------------------------------------------
 	 Hero content
 -------------------------------------------------------------------------------*/
 .hero {
 	margin-top: 10%;
-}
-.hero-content {
 }
 .hero h1 {
 	font-size: 48px;
@@ -367,26 +218,12 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Service
 -------------------------------------------------------------------------------*/
-.service {
-	margin-bottom: 50px;
-}
 .service h4 {
-	font-size: 19px;
-	color: #000;
-	font-weight: 400;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	padding: 1.5rem;
+	word-spacing: 0.5rem;
 	text-transform: uppercase;
-}
-.service-content {
-	margin-top: 30px;
-}
-.service .icon {
-	color: #a1a4a8;
-	font-size: 48px;
-}
-.service-content h5 {
-	text-transform: uppercase;
-	font-weight: 400;
-	color: #000;
 }
 /* ------------------------------------------------------------------------------
 	 Footer
@@ -449,12 +286,10 @@ ul li {
 	text-align: center;
 	margin: 5% 0 5% 0;
 }
-
 .work-detail a
 {
 	color:#000;
 }
-
 iframe {
 	height: 100vh;
 	width: 100%;
